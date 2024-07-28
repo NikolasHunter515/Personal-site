@@ -1,0 +1,21 @@
+.container-fluid{
+    display:grid;
+    grid-colum:1;
+    gap-row:20px;
+    padding:20px;
+    justify-content: center;
+}
+.navbar{
+    background-color: lightblue;
+}
+.navbar-nav{
+    float:center;
+}
+.card{
+    width:400px;
+    text-align:center;
+    box-shadow: 5px 5px 10px grey, -5px -5px 10px grey;
+}
+.carousel{
+    width:400px;
+}
