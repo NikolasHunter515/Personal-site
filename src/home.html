@@ -8,8 +8,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm justify-content-center">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm justify-content-center fixed-top">
+            <div class="container-fluid" id="top">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
@@ -35,16 +35,21 @@
             </div>
         </nav>
 
+        <br>
+        <br>
+        <br>
         <!--Profile card for about me-->
         <div class="container-fluid">
             <div class="card" id="profile">
                 <img class="card-img-top" src="https://cdn.freebiesupply.com/logos/large/2x/detroit-red-wings-4-logo-png-transparent.png" alt="Mr.Hunter">
                 <div class="card-body">
                     <h2>Nikolas Hunter</h2>
+                    <hr>
                     <p>Current Role: Third year Computer Science student, at CUNY College Of Staten Island</p>
                     <!--Maybe write script to sort these and display-->
                     <p>Languages: C, C++, CSS, Java, JavaScript, Julia, and HTML</p>
                     <p>Preferred Role's: Backend</p>
+                    <hr>
                     <p>Interest's: Hockey, Grunge, Heavy Metal, Film, Architecture, and Hiking</p>
                 </div>
 
@@ -62,6 +67,7 @@
 
             <!--Content of portfolio-->
             <div class="carousel-inner">
+                <!--The image may have a showcase followed by the technical details-->
                 <div class="carousel-item active">
                     <img src="https://cdn.thinglink.me/api/image/601815712037601282/1024/10/scaletowidth/0/0/1/1/false/true?wait=true" alt="Team Building Project" class="d-block w-100">
                 </div>
@@ -79,9 +85,10 @@
             </button>
         </div>
 
+        <!--Just a temp value, remember to change it.-->
         <div class="container-fluid" id="resume">
-            <object data="https://cultivatedculture.com/wp-content/themes/x5-child/assets/images/templates/template5.jpg" width="400" hieght="400"></object>
-        </div>>
+            <object data="https://cultivatedculture.com/wp-content/themes/x5-child/assets/images/templates/template5.jpg" width="800" hieght="500"></object>
+        </div>
 
     </body>
 </html>

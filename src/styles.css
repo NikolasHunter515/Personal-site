@@ -5,8 +5,11 @@
     padding:20px;
     justify-content: center;
 }
+#top{
+    padding:10px;
+}
 .navbar{
-    background-color: lightblue;
+    background-color: #6e9181;
 }
 .navbar-nav{
     float:center;
