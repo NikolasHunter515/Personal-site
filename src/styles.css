@@ -7,6 +7,7 @@
 }
 #top{
     padding:10px;
+    justify-content: center;
 }
 .navbar{
     background-color: #6e9181;
@@ -19,6 +20,15 @@
     text-align:center;
     box-shadow: 5px 5px 10px grey, -5px -5px 10px grey;
 }
+.card-body{
+    background-color: #6b5ca3;
+}
 .carousel{
     width:400px;
+}
+#slide-info{
+    visibility: hidden;
+}
+#hide{
+    border: none;
 }
