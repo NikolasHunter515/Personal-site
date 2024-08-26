@@ -41,14 +41,15 @@
         <!--Profile card for about me-->
         <div class="container-fluid">
             <div class="card" id="profile">
-                <img class="card-img-top" src="https://cdn.freebiesupply.com/logos/large/2x/detroit-red-wings-4-logo-png-transparent.png" alt="Mr.Hunter">
+                <!--Move image to the side in the future.-->
+                <img class="card-img-top" src="Profile-Photo.jpg" alt="Mr.Hunter">
                 <div class="card-body">
                     <h2>Nikolas Hunter</h2>
                     <hr>
                     <p>Current Role: Third year Computer Science student</p>
                     <p>CUNY College Of Staten Island Class of 2026</p>
                     <!--Maybe write script to sort these and display-->
-                    <p>Languages: C/C++, Java, JavaScript, Julia, HTML, and CSS</p>
+                    <p>Languages: C/C++, Java, JavaScript, Julia, Python, HTML, and CSS</p>
                     <p>Preferred Role's: Backend</p>
                     <hr>
                     <p>Interest's: Hockey, Grunge, Heavy Metal, Film, Architecture, and Hiking</p>
@@ -70,7 +71,7 @@
             <div class="carousel-inner">
                 <!--The image may have a showcase followed by the technical details-->
                 <div class="carousel-item active">
-                    <input type="image" src="https://cdn.thinglink.me/api/image/601815712037601282/1024/10/scaletowidth/0/0/1/1/false/true?wait=true" alt="Team Building Project" class="d-block w-100"/>
+                    <input type="image" src="Reminder-Extension-demo.png" alt="Team Building Project" class="d-block w-400"/>
                 </div>
                 <div class="carousel-item">
                     <input type="image" src="https://bringatrailer.com/wp-content/uploads/2019/03/1990_porsche_911_carrera_1551987834ef66e7dff9f98764da1990-Porsche-964-C2-Coupe-for-Sale-A-GC.com-1.jpg" alt="Reminder Browser Extension" class="d-block w-100" onclick="unhide()"/>
@@ -87,20 +88,33 @@
         </div>
 
         <div id="slide-info1" class="container-fluid">
+            <h3>Team Builder</h3>
             <p>This is some info. The Porsche 911, is an amazing vehicle.</p>
-            <button onclick="hide()" id="hide">Hide</button>
+            <button onclick="hide()" id="hide1">Hide</button>
+        </div>
+
+        <div id="slide-info2" class="container-fluid">
+            <h3>Browser Reminder</h3>
+            <p>Reminds user to complete tasks after a user entered number of days.</p>
+            <p>Front-end, HTML, CSS, and JavaScript; it is also used for file processing.</p>
+            <p>Back-end NodeJS. Primarily used for file uploading and alterations.</p>
+            <button onclick="hide()" id="hide2">Hide</button>
         </div>
         <!--Just a temp value, remember to change it.-->
         <div class="container-fluid" id="resume">
-            <object data="https://cultivatedculture.com/wp-content/themes/x5-child/assets/images/templates/template5.jpg" width="800" hieght="500"></object>
+            <object data="Resume.jpeg" width="800" hieght="500"></object>
         </div>
 
         <script>
-            function unhide(){
-                document.getElementById("slide-info1").style.visibility = 'visible';
+            //indude the element name for each usage of this.
+            //maybe this should be its own file.
+            //TODO write script to display info based on the current slide.
+            name = "slide-info2";
+            function unhide(slideId){
+                document.getElementById(name).style.visibility = 'visible';
             }
             function hide(){
-                document.getElementById("slide-info1").style.visibility = 'hidden';
+                document.getElementById(name).style.visibility = 'hidden';
             }
         </script>
     </body>
