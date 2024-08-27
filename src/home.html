@@ -75,7 +75,7 @@
                     <input type="image" src="Reminder-Extension-demo.png" alt="Team Building Project" class="d-block w-400"/>
                 </div>
                 <div class="carousel-item">
-                    <input type="image" src="https://bringatrailer.com/wp-content/uploads/2019/03/1990_porsche_911_carrera_1551987834ef66e7dff9f98764da1990-Porsche-964-C2-Coupe-for-Sale-A-GC.com-1.jpg" alt="Reminder Browser Extension" class="d-block w-100" onclick="unhide()"/>
+                    <input type="image" src="https://bringatrailer.com/wp-content/uploads/2019/03/1990_porsche_911_carrera_1551987834ef66e7dff9f98764da1990-Porsche-964-C2-Coupe-for-Sale-A-GC.com-1.jpg" alt="Reminder Browser Extension" class="d-block w-100"/>
                 </div>
             </div>
 
@@ -91,7 +91,7 @@
         <div id="slide-info1" class="container-fluid">
             <h3 id="title"></h3>
             <p id="info"></p>
-            <button onclick="hide()" id="hide1">Hide</button>
+            <!--<button onclick="hide()" id="hide1">Hide</button>-->
         </div>
 
         <!--Just a temp value, remember to change it.-->
@@ -121,7 +121,7 @@
                 });
             });
 
-            //maybe the project description should be visible always.
+            // description is always visible, but it activated by slide index 1.
             function unhide(slideId){
                 document.getElementById(name).style.visibility = 'visible';
             }
